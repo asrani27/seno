@@ -41,8 +41,8 @@
                 <td style="text-align: center">{{$no++}}</td>
                 <td style="text-align: center">{{$item->tanggal}}</td>
                 <td style="text-align: center">{{$item->nomor}}</td>
-                <td style="text-align: center">{{$item->registrasi->nomor_polisi}}</td>
-                <td style="text-align: center">{{$item->petugas->nama}}</td>
+                <td style="text-align: center">{{$item->registrasi == null ? '': $item->registrasi->nomor_polisi}}</td>
+                <td style="text-align: center">{{$item->petugas == null ? '': $item->petugas->nama}}</td>
                 <td style="text-align: center">{{$item->hasil}}</td>
             </tr>
         @endforeach

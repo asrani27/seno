@@ -33,7 +33,7 @@
                 <td>{{$item->tanggal}}</td>
                 <td>{{$item->nomor}}</td>
                 <td>{{$item->registrasi == null ? '': $item->registrasi->nomor_reg}}</td>
-                <td>{{$item->petugas->nama}}</td>
+                <td>{{$item->petugas == null ? '': $item->petugas->nama}}</td>
                 <td>{{$item->hasil}}</td>
                 <td>
                   <a href="/superadmin/pemeriksaan/cetak/{{$item->id}}" class="btn btn-flat btn-sm btn-primary" target="_blank"><i class="fa fa-file"></i> Cetak</a>

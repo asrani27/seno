@@ -33,19 +33,19 @@
         </tr>
         <tr>
             <td>No Polisi</td>
-            <td>: {{$data->registrasi->nomor_polisi}}</td>
+            <td>: {{$data->registrasi == null ? '': $data->registrasi->nomor_polisi}}</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td>Pemilik</td>
-            <td>: {{$data->registrasi->pemilik}}</td>
+            <td>: {{$data->registrasi == null ? '': $data->registrasi->pemilik}}</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td>Alamat</td>
-            <td>: {{$data->registrasi->alamat}}</td>
+            <td>: {{$data->registrasi == null ? '': $data->registrasi->alamat}}</td>
             <td></td>
             <td></td>
         </tr>
@@ -57,25 +57,25 @@
         </tr>
         <tr>
             <td>Merk</td>
-            <td>: {{$data->registrasi->merk}}</td>
+            <td>: {{$data->registrasi == null ? '': $data->registrasi->merk}}</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td>Tahun</td>
-            <td>: {{$data->registrasi->tahun}}</td>
+            <td>: {{$data->registrasi == null ? '': $data->registrasi->tahun}}</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td>Nomor Mesin</td>
-            <td>: {{$data->registrasi->nomor_mesin}}</td>
+            <td>: {{$data->registrasi == null ? '': $data->registrasi->nomor_mesin}}</td>
             <td></td>
             <td></td>
         </tr>
         <tr>
             <td>Nomor Rangka</td>
-            <td>: {{$data->registrasi->nomor_rangka}}</td>
+            <td>: {{$data->registrasi == null ? '': $data->registrasi->nomor_rangka}}</td>
             <td></td>
             <td></td>
         </tr>
