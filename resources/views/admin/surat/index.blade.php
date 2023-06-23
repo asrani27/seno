@@ -29,7 +29,7 @@
                 <td>{{$data->firstItem() + $key}}</td>
                 <td>{{$item->tanggal}}</td>
                 <td>{{$item->nomor}}</td>
-                <td>{{$item->pemeriksaan->nomor}}</td>
+                <td>{{$item->pemeriksaan == null ? '' $item->pemeriksaan->nomor}}</td>
                 <td>
                   <a href="/superadmin/surat/edit/{{$item->id}}" class="btn btn-flat btn-sm btn-primary"><i class="fa fa-edit"></i> Edit</a>
                   <a href="/superadmin/surat/delete/{{$item->id}}" class="btn btn-flat btn-sm btn-primary" onclick="return confirm('Yakin ingin dihapus?');"><i class="fa fa-trash"></i> Delete</a>
